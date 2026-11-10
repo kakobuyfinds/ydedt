@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#21152a">
+  <meta name="description" content="Guide ESGOBuy spreadsheet en français. Explorez dix rayons Hipobuyfind et apprenez à vérifier une fiche produit, les tailles, les photos QC et les frais d’envoi.">
+  <title>ESGOBuy spreadsheet – Guide des liens, des tailles et du QC</title>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="ESGOBuy spreadsheet – Guide des liens, des tailles et du QC">
+  <meta property="og:description" content="Dix rayons à explorer et des conseils pour comparer les fiches, lire les photos QC et préparer un colis.">
+  <!-- Repérage éditorial à partir des dix premiers résultats naturels de Bing pour « ESGOBuy spreadsheet », répartis sur sept domaines. -->
+  <style>
+    :root { color-scheme: light; --ink: #21152a; --paper: #f7f3fa; --lime: #ddfb82; --lilac: #e9dff2; --line: #cfc2d7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.6 system-ui, sans-serif; }
+    h1, h2, h3, p, figure { margin: 0; }
+    h1, h2, h3 { line-height: 1.1; }
+    h1 { max-width: 13ch; font-size: clamp(2.55rem, 7.5vw, 6rem); letter-spacing: -.065em; overflow-wrap: anywhere; }
+    h2 { font-size: clamp(1.65rem, 4vw, 3rem); letter-spacing: -.04em; }
+    h3 { font-size: clamp(1.2rem, 2.4vw, 1.55rem); }
+    a { color: inherit; text-underline-offset: .2em; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid #6e3795; outline-offset: 4px; }
+    header a:focus-visible, footer a:focus-visible { outline-color: var(--lime); }
+    .wrap { width: min(72rem, calc(100% - 2rem)); margin-inline: auto; }
+    header, footer { background: var(--ink); color: #fff; }
+    .bar { display: flex; align-items: center; justify-content: space-between; gap: .75rem; flex-wrap: wrap; padding-block: .8rem; border-bottom: 1px solid #64536d; }
+    .brand { font-weight: 800; }
+    .kicker { font-size: .78rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+    header .kicker { color: var(--lime); }
+    .hero { display: grid; grid-template-columns: 1.4fr 1fr; align-items: center; gap: clamp(1.2rem, 4vw, 3.5rem); padding-block: clamp(1.75rem, 4vw, 3.5rem); }
+    .hero h1 { margin-block: .45rem .85rem; }
+    .hero p { max-width: 55ch; color: #f1e6f5; }
+    .hero figure { background: var(--lime); color: var(--ink); }
+    img { display: block; width: 100%; }
+    .hero img { height: auto; aspect-ratio: 16 / 10; object-fit: contain; padding: .5rem; }
+    figcaption { padding: .55rem .75rem; font-size: .87rem; }
+    .hero figcaption { border-top: 1px solid #75883f; }
+    .rayons { background: var(--lilac); padding-block: 1.5rem; border-bottom: 1px solid var(--line); }
+    .rayons h2 { margin-bottom: .65rem; }
+    .rayons ul { list-style: none; margin: .9rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .5rem; }
+    .rayons a { display: flex; align-items: center; justify-content: space-between; gap: .35rem; height: 100%; min-height: 3rem; padding: .55rem .65rem; background: var(--paper); border: 1px solid #a892b4; font-size: .94rem; font-weight: 700; text-decoration: none; }
+    .rayons a:hover { background: var(--lime); text-decoration: underline; }
+    .rayons a span { flex: none; }
+    .section { padding-block: clamp(2rem, 5vw, 4rem); }
+    .section h2 { margin-block: .35rem 1rem; }
+    .dossier { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: clamp(1.5rem, 4vw, 3.5rem); }
+    article { padding: 1rem 0; border-top: 1px solid var(--line); }
+    article h3 { margin-bottom: .45rem; }
+    article p + p { margin-top: .6rem; }
+    .gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; margin-top: .8rem; }
+    .gallery figure { background: #fff; border: 1px solid var(--line); }
+    .gallery img { height: auto; aspect-ratio: 1; object-fit: contain; background: #fbfbfb; }
+    .note { font-size: .93rem; }
+    .aside-note { background: var(--lilac); padding: .9rem; margin-top: 1rem; }
+    .faq { border-top: 1px solid var(--line); }
+    .faq > p, details p { max-width: 74ch; }
+    details { border-bottom: 1px solid var(--line); }
+    summary { min-height: 2.8rem; padding: .85rem .15rem; cursor: pointer; font-weight: 750; }
+    details p { padding: 0 .15rem .9rem; }
+    footer { padding-block: 1.4rem; }
+    footer p { margin-top: .45rem; }
+    @media (max-width: 54rem) { .rayons ul { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (max-width: 40rem) {
+      .hero, .dossier { grid-template-columns: 1fr; }
+      .hero figure { max-width: 26rem; }
+      .rayons ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "ESGOBuy spreadsheet – Guide des liens, des tailles et du QC",
+        "description": "Guide ESGOBuy spreadsheet en français. Explorez dix rayons Hipobuyfind et apprenez à vérifier une fiche produit, les tailles, les photos QC et les frais d’envoi.",
+        "inLanguage": "fr"
+      },
+      {
+        "@type": "FAQPage",
+        "name": "Questions fréquentes",
+        "inLanguage": "fr",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qu’est-ce qu’un ESGOBuy spreadsheet ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "C’est un répertoire qui regroupe des références et des liens produits par catégorie. Utilisez-le pour préparer une sélection, puis vérifiez les options et la disponibilité sur la fiche du vendeur."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Où mènent les dix liens de catégories ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ils ouvrent les rayons de Hipobuyfind. Ce guide propose une méthode de recherche indépendante d’ESGOBuy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Une photo QC permet-elle de vérifier l’authenticité ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non. Une photo QC sert à examiner l’état visible et la conformité de la variante. Pour vérifier l’authenticité, demandez une preuve de provenance à un vendeur agréé."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment choisir une taille entre deux tableaux différents ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mesurez en centimètres une pièce qui vous va, puis comparez ces mesures à celles de la variante choisie. En cas d’écart entre les tableaux, demandez une mesure réelle au vendeur avant de commander."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quand estimer le coût d’un envoi vers la France ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Faites une première estimation avant l’achat, puis recalculez-la avec le poids et les dimensions du colis emballé. Vérifiez les frais et conditions applicables à votre destination."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/ydedt/">
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="https://www.hipobuyfind.com">www.hipobuyfind.com</a>
+      <span class="kicker">Carnet de repérage</span>
+    </div>
+    <div class="wrap hero">
+      <div>
+        <span class="kicker">Guide indépendant · Mode et accessoires</span>
+        <h1>ESGOBuy spreadsheet</h1>
+        <p>Un spreadsheet rassemble des références et des liens pour comparer des articles. Commencez par un rayon Hipobuyfind, puis vérifiez la variante, les mesures et les photos avant de retenir une fiche.</p>
+      </div>
+      <figure>
+        <img src="https://www.nike.qa/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dwd69368f7/nk/0f7/6/f/7/3/e/0f76f73e_2578_4d62_abab_c5563ea4f78c.png?sw=720&amp;sh=450&amp;sm=fit" alt="Nike Dunk Low Retro blanche avec un Swoosh noir" width="720" height="450" fetchpriority="high">
+        <figcaption>Repère visuel · Nike Dunk Low Retro</figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <main>
+    <nav class="rayons" aria-labelledby="rayons">
+      <div class="wrap">
+        <h2 id="rayons">Choisir un rayon</h2>
+        <p>Dix catégories Hipobuyfind pour commencer par le bon type d’article.</p>
+        <ul>
+          <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Chaussures <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Sweats et pulls <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Vestes <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Pantalons et shorts <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Casquettes et bonnets <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-917-Sets.html">Ensembles <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Sous-vêtements <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Maillots <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessoires <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="wrap">
+      <section class="section dossier" aria-labelledby="dossier">
+        <div>
+          <span class="kicker">Le dossier pratique</span>
+          <h2 id="dossier">De la fiche au colis</h2>
+          <article>
+            <h3>Liens produits ESGOBuy</h3>
+            <p>Pour comparer deux annonces de baskets, gardez le même modèle et le même coloris. Ouvrez la fiche du vendeur et vérifiez la référence du modèle, les variantes disponibles et la pointure en stock. Notez le lien source et la date de vérification pour retrouver la bonne version.</p>
+            <p>Si le lien d’origine ouvre un autre article, reprenez la recherche par catégorie avec le type de produit et un seul détail distinctif. Une image similaire peut correspondre à une coupe, un coloris ou une version différente.</p>
+          </article>
+          <article>
+            <h3>Guide des tailles ESGOBuy</h3>
+            <p>Posez un vêtement qui vous va bien à plat. Pour un sweat, comparez la largeur de poitrine mesurée à plat et la longueur des manches. Pour une veste, ajoutez la largeur d’épaules. Pour un short, comparez la largeur de ceinture et la longueur d’entrejambe.</p>
+            <p>Pour des chaussures, relevez la longueur du pied en centimètres et comparez-la au tableau de pointures du modèle. Vérifiez ce que mesure le vendeur quand il indique une longueur de semelle intérieure.</p>
+          </article>
+          <article>
+            <h3>Photos QC ESGOBuy</h3>
+            <p>QC désigne ici le contrôle qualité à partir des photos d’entrepôt disponibles. Pour des baskets, demandez une vue de profil et une vue de la semelle. Pour un vêtement, regardez les coutures, l’étiquette de taille et les finitions de la fermeture.</p>
+            <p>Si un détail reste masqué, demandez un gros plan ou une photo avec un mètre ruban. Avant de valider l’expédition, comparez le coloris et la taille avec votre commande et consultez les conditions de retour du vendeur en cas d’écart.</p>
+          </article>
+          <article>
+            <h3>Livraison internationale avec ESGOBuy</h3>
+            <p>Pour estimer un envoi vers la France, la Belgique ou le Canada, distinguez les frais de livraison intérieure et les frais de transport international. Relevez le poids réel et les dimensions du colis emballé, puis vérifiez si le transporteur applique le poids volumétrique.</p>
+            <p>Comparez les options de suivi, les restrictions du transporteur et les frais éventuels à destination. Si vous envisagez un regroupement de colis, comparez les deux estimations avec les dimensions et le poids de chaque scénario.</p>
+          </article>
+        </div>
+
+        <aside aria-labelledby="details-mode">
+          <span class="kicker">La planche mode</span>
+          <h2 id="details-mode">Quatre détails à observer</h2>
+          <p class="note">Ces visuels illustrent les détails à examiner sur une fiche. La disponibilité se vérifie auprès du vendeur.</p>
+          <div class="gallery">
+            <figure>
+              <img src="https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-denim-jacket--FVJA29EFY610_PM2_Front%20view.png?hei=480&amp;wid=480" alt="Veste Louis Vuitton en denim bleu à motif Monogram et boutons dorés" width="480" height="480" loading="lazy" decoding="async">
+              <figcaption><strong>Louis Vuitton</strong><br>Poignets et boutons</figcaption>
+            </figure>
+            <figure>
+              <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" alt="Casquette Gucci en toile GG beige à visière marron" width="640" height="640" loading="lazy" decoding="async">
+              <figcaption><strong>Gucci</strong><br>Visière et tour de tête</figcaption>
+            </figure>
+            <figure>
+              <img src="https://assets.hermes.com/is/image/hermesproduct/bracelet-clic-h--700001F%204P-front-1-300-0-1000-1000_b.jpg" alt="Bracelet Hermès Clic H en émail avec fermoir doré en forme de H" width="1000" height="1000" loading="lazy" decoding="async">
+              <figcaption><strong>Hermès</strong><br>Fermoir et tour de poignet</figcaption>
+            </figure>
+            <figure>
+              <img src="https://assets.christiandior.com/is/image/diorprod/593J635A3026C981_E01?%24default_GHC%24=&amp;crop=433%2C150%2C1134%2C1354&amp;hei=480&amp;scale=0.875&amp;wid=444" alt="T-shirt Dior CD Icon noir à col rond et broderie sur la poitrine" width="444" height="480" loading="lazy" decoding="async">
+              <figcaption><strong>Dior</strong><br>Col et placement de la broderie</figcaption>
+            </figure>
+          </div>
+          <p class="aside-note note"><strong>À noter dans votre sélection.</strong> Pour une casquette réglable, relevez le tour de tête et le type de fermeture. Pour un bracelet rigide, comparez le diamètre intérieur et la largeur du bracelet en plus du tour de poignet.</p>
+        </aside>
+      </section>
+
+      <section class="section faq" aria-labelledby="questions">
+        <span class="kicker">Réponses courtes</span>
+        <h2 id="questions">Questions fréquentes</h2>
+        <details open>
+          <summary>Qu’est-ce qu’un ESGOBuy spreadsheet ?</summary>
+          <p>C’est un répertoire qui regroupe des références et des liens produits par catégorie. Utilisez-le pour préparer une sélection, puis vérifiez les options et la disponibilité sur la fiche du vendeur.</p>
+        </details>
+        <details>
+          <summary>Où mènent les dix liens de catégories ?</summary>
+          <p>Ils ouvrent les rayons de Hipobuyfind. Ce guide propose une méthode de recherche indépendante d’ESGOBuy.</p>
+        </details>
+        <details>
+          <summary>Une photo QC permet-elle de vérifier l’authenticité ?</summary>
+          <p>Non. Une photo QC sert à examiner l’état visible et la conformité de la variante. Pour vérifier l’authenticité, demandez une preuve de provenance à un vendeur agréé.</p>
+        </details>
+        <details>
+          <summary>Comment choisir une taille entre deux tableaux différents ?</summary>
+          <p>Mesurez en centimètres une pièce qui vous va, puis comparez ces mesures à celles de la variante choisie. En cas d’écart entre les tableaux, demandez une mesure réelle au vendeur avant de commander.</p>
+        </details>
+        <details>
+          <summary>Quand estimer le coût d’un envoi vers la France ?</summary>
+          <p>Faites une première estimation avant l’achat, puis recalculez-la avec le poids et les dimensions du colis emballé. Vérifiez les frais et conditions applicables à votre destination.</p>
+        </details>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="brand" href="https://www.hipobuyfind.com">Explorer www.hipobuyfind.com</a>
+      <p class="note">Guide éditorial indépendant. Les marques et leurs visuels sont présentés à titre d’illustration.</p>
+    </div>
+  </footer>
+</body>
+</html>
